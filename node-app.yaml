@@ -14,8 +14,8 @@ spec:
     spec:
       containers:
       - name: node-app
-        image: node-mysql-app
-        imagePullPolicy: Never
+        image: abhirocks493/node-k8-app:latest
+        imagePullPolicy: Always
         ports:
         - containerPort: 5000
         env:

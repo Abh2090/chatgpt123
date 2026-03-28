@@ -24,7 +24,7 @@ app.post('/add', (req, res) => {
   const { id, name } = req.body;
   db.query('INSERT INTO users (id, name) VALUES (?, ?)', [id, name], (err) => {
     if (err) return res.send(err);
-    res.send("User added");
+    res.send("User added via CI/CD");
   });
 });
 
